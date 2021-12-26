@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: blue;
+
+}
+
+.display {
+    --size: 200px;
+
+    margin: 3em auto;
+    width: var(--size);
+    height: var(--size);
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display p {
+    text-align: center;
+    font-family: monospace;
+    font-size: 8em;
+}
+
+.fade-out {
+    animation: fadeout 1s linear infinite;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#answer {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    border: 3px solid white;
+    margin: 0 auto;
+}
+
+#answer:focus {
+    outline: none;
+    background-color: rgb(188, 188, 243);
+}
+
+.heading {
+    color: white;
+    margin: 0.7em auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+.sub-heading {
+    font-size: 2em;
+    margin: 0.5em auto;
+}
+
+.instructions {
+    font-size: 2em !important;
+    cursor: pointer;
+}
